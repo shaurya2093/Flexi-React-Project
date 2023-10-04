@@ -1,0 +1,62 @@
+/* Service.css */
+
+/* Service heading styles */
+.section-heading {
+    color: white;
+    font-weight:bold;
+    margin-bottom: 40px; /* Add margin below the heading */
+    padding: 10px; /* Add padding around the heading */
+    font-family: 'YourFont', sans-serif; /* Change the font-family as needed */
+    font-size: 30px; /* Adjust the font-size as needed */
+}
+
+/* Service container styles */
+.container {
+    background: url('../Assests/video.mp4') center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+    object-fit: contain;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+/* Service card styles */
+.service-card {
+    text-align: center;
+    border: none;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    font-family: 'YourFont', sans-serif; /* Change the font-family as needed */
+    background-color: #f8f9fa; /* Change the background color as needed */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff; /* Change the background color on hover as needed */
+}
+
+.service-card .card-body {
+    text-align: center;
+}
+
+.service-card .card-title {
+    margin-top: 10px;
+    font-weight: bold; /* Add font-weight for the title */
+}
+
+.row{
+    margin: 0;;
+}

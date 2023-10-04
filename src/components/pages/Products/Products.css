@@ -1,0 +1,83 @@
+/* CSS for Product Cards */
+
+.section-heading {
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    margin-bottom: 40px; /* Add margin below the heading */
+    padding: 10px; /* Add padding around the heading */
+    font-family: 'YourFont', sans-serif; /* Change the font-family as needed */
+    font-size: 30px; /* Adjust the font-size as needed */
+  }
+  
+  .product-item {
+      text-align: center;
+    }
+    
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      height: 100%; /* Ensure the cards take full height of the container */
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-text {
+      color: #555;
+    }
+    
+    .card-body {
+      padding: 2rem;
+      display: flex; /* Enable flexbox layout for vertical alignment */
+      flex-direction: column; /* Stack child elements vertically */
+      justify-content: space-between; /* Distribute space evenly between them */
+      height: 100%; /* Take full height of the card body */
+    }
+    
+    /* CSS for Product Section */
+    #products-container {
+      margin-top: 3rem;
+    }
+    
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    
+    /* Optional: Add media query for responsiveness */
+    @media (max-width: 768px) {
+      .card {
+        margin-bottom: 2rem;
+      }
+    }
+    .product-item {
+      margin-bottom: 20px;
+  }
+  
+  .card {
+      height: 100%;
+      transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+      transform: scale(1.05); /* Scale the card on hover for a slight zoom effect */
+  }
+    
