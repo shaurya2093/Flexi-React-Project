@@ -1,61 +1,71 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import './SignUp.css'; // Import the provided CSS
+import './SignUp.css'
 
-const Signup = () => {
-  const [formData, setFormData] = useState({
-    username: '',
-    password: '',
-  });
+const LoginSignup = () => {
+  const [activeForm, setActiveForm] = useState('login');
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
 
-  const handleSignup = () => {
-    // Handle signup logic here (e.g., send data to a server)
-    console.log('Signup:', formData);
+    // TODO: Send the login or signup data to the server.
+    // If the authentication or account creation is successful, redirect the user to the home page.
+    // Otherwise, display an error message.
   };
 
   return (
-    <div className="signup-container">
-      <div className="signup-form">
-        <h2>Signup</h2>
-        <Form>
-          <Form.Group controlId="formBasicUsername">
-            <Form.Label>Username</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter username"
-              name="username"
-              value={formData.username}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
+    <div className="sign-up-container">
+      <h1>Login or Sign Up</h1>
 
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Enter password"
-              name="password"
-              value={formData.password}
-              onChange={handleInputChange}
-            />
-          </Form.Group>
+      <div className="row">
+        <div className="col-md-6">
+          <Form onSubmit={handleFormSubmit}>
+            <Form.Group controlId="formGroupEmail">
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control type="email" placeholder="Enter your email address" />
+            </Form.Group>
 
-          <Button
-            variant="primary"
-            onClick={handleSignup}
-            className="signup-button"
-          >
-            Signup
-          </Button>
-        </Form>
+            {activeForm === 'login' && (
+              <Form.Group controlId="formGroupPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Enter your password" />
+              </Form.Group>
+            )}
+
+            {activeForm === 'signup' && (
+              <Form.Group controlId="formGroupName">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="text" placeholder="Enter your name" />
+              </Form.Group>
+            )}
+
+            <Button type="submit">Submit</Button>
+          </Form>
+        </div>
+
+        <div className="col-md-6">
+          <ul className="nav nav-pills nav-fill">
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeForm === 'login' ? 'active' : ''}`}
+                onClick={() => setActiveForm('login')}
+              >
+                Login
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeForm === 'signup' ? 'active' : ''}`}
+                onClick={() => setActiveForm('signup')}
+              >
+                Sign Up
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Signup;
+export default LoginSignup;
