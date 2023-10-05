@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import './Services.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from '../Assests/1.jpeg';
 import img2 from '../Assests/2.jpeg';
 import img3 from '../Assests/3.jpeg';

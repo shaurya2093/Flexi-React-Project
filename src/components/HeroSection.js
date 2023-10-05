@@ -11,15 +11,15 @@ function HeroSection() {
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonStyle='btn--myoutline'
+          buttonSize='btn--mylarge'
           onClick={() => console.log('Get Started button clicked')}
         >
           GET STARTED
         </Button>
         <Button
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
+          buttonStyle='btn--myprimary'
+          buttonSize='btn--mylarge'
           onClick={() => console.log('Watch Trailer button clicked')}
         >
           WATCH TRAILER <i className='far fa-play-circle' />

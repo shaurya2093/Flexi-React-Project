@@ -1,0 +1,25 @@
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-us-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container p {
+    margin-bottom: 20px;
+  }
+  
+  .team-image {
+    max-width: 100%;
+    border-radius: 10px; /* Adds rounded corners to the image */
+    margin-bottom: 20px;
+  }
+  
+  .about-us-btn {
+    margin-top: 30px;
+  }
+  

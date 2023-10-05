@@ -1,5 +1,5 @@
 :root {
-  --primary: #fff;
+  --myprimary: #fff;
 }
 
 .btn {
@@ -10,31 +10,31 @@
   cursor: pointer;
 }
 
-.btn--primary {
-  background-color: var(--primary);
+.btn--myprimary {
+  background-color: var(--myprimary);
   color: #242424;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--myprimary);
 }
 
-.btn--outline {
+.btn--myoutline {
   background-color: transparent;
   color: #fff;
   padding: 8px 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--myprimary);
   transition: all 0.3s ease-out;
 }
 
-.btn--medium {
+.btn--mymedium{
   padding: 8px 20px;
   font-size: 18px;
 }
 
-.btn--large {
+.btn--mylarge {
   padding: 12px 26px;
   font-size: 20px;
 }
 
-.btn--large:hover,
+.btn--mylarge:hover,
 .btn--medium:hover {
   transition: all 0.3s ease-out;
   background: #fff;
