@@ -1,4 +1,4 @@
-.sign-up-container {
+/* .sign-up-container {
   max-width: 600px;
   margin: 9% auto;
   padding: 40px;
@@ -61,4 +61,25 @@ h1 {
   background-color: #007bff;
   color: #fff;
   border: 1px solid #007bff;
+} */
+
+.login {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+  background-size: cover;
+  background-position: center;
+}
+.login-heading {
+  font-weight: 300;
+}
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+.invalid
+{
+  border-color: red!important;
 }
